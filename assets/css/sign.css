@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.create {
+  padding: 40px 100px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.create h1 {
+  font-size: 48pt;
+  color: #1A54F8;
+  margin-bottom: 40px;
+}
+
+.create p {
+  font-size: 18pt;
+  font-weight: 600;
+  margin-bottom: 80px;
+}
+
+.create p span {
+  color: #1A54F8
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px
+}
+
+.sign img{
+  width: 100%;
+}
+
+aside {
+  padding: 40px;
+  background-image: url(../images/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+aside h1 {
+  font-size: 48pt;
+  color: #FBFBFC;
+  margin-bottom: 40px;
+}
+
+.sign--inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px
+}
+
+.sign--inputs input {
+  padding: 5px 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: #3F3D56
+}
+
+.sign--buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px
+}
+
+.sign--buttons a {
+  display: block;
+  padding: 15px;
+  width: 200px;
+  background-color:#FBFBFC;
+  text-align: center;
+  color:  #0024F1;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16pt;
+  border: 1px solid #FBFBFC;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+}
+
+.sign--buttons a:hover {
+  background-color: #9FB3D2;
+  color: #FBFBFC
+}
+
+.sign--buttons span {
+  margin: 20px 0px 20px;
+  color: #FBFBFC;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  color: #FBFBFC;
+}
+
+footer a {
+  text-decoration: none;
+  margin-top: 5px;
+  color: #FBFBFC
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+@media (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+
+  .create {
+    display: none
+  }
+
+  aside {
+    width: 100%;
+    height: 100vh;
+  }
+
+  footer {
+    margin-top: 70px;
+  }
+}
